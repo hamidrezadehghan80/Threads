@@ -2,82 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86da12a1-385b-4f1a-9281-4ba5adc1530f" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/onboarding/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-in/[[...sign-in]]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-up/[[...sign-up]]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/activity/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/communities/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/create-thread/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/profile/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/search/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/thread/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/uploadthing/core.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/uploadthing/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/webhook/clerk/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/cards/ThreadCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/cards/UserCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/forms/AccountProfile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/forms/PostThread.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/forms/comment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Bottombar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/LeftsideBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/RightsideBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/ThreadsTab.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Topbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/profile_header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/label.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/textarea.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/community.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/thread.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/user.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/community.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/thread.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mongoose.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/uploadthing.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/validations/thread.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/validations/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/community.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/create.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/heart-filled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/heart-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/heart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/members.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/more.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/reply.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/repost.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/request.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/search-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/tag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +67,7 @@
       <workItem from="1695285548435" duration="5167000" />
       <workItem from="1695290881741" duration="1720000" />
       <workItem from="1695307006855" duration="15676000" />
-      <workItem from="1695396931645" duration="1358000" />
+      <workItem from="1695396931645" duration="2676000" />
     </task>
     <servers />
   </component>
