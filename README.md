@@ -1,11 +1,11 @@
 # Threads
 
 Threads is a social media web application built with Next.js, TailwindCSS, and MongoDB.
-# Overview
+## Overview
 
 Threads allows users to share posts called "threads" containing text, images, links, and media. Interact through likes, comments, and reshares. Sign up to follow users and join interest-based communities. Search for relevant content.
 
-# Key features:
+## Key features:
 
     Sign up with a unique username and password
     Customize your profile with an avatar and bio
@@ -17,7 +17,7 @@ Threads allows users to share posts called "threads" containing text, images, li
     Edit or delete your own threads
     Fully responsive design optimized for all devices
 
-# Built With
+## Built With
 
     Frontend + Backend
         Next.js - React framework with SSR
@@ -59,6 +59,6 @@ Copy code
 npm run dev
 
 The app will be available at http://localhost:3000.
-Contributing
+## Contributing
 
 Pull requests are welcome! Feel free to open an issue discussing any bugs or new features.
