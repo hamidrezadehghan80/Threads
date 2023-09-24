@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {SignedIn, SignOutButton, OrganizationSwitcher} from "@clerk/nextjs";
+import {SignedIn, SignOutButton, OrganizationSwitcher, SignInButton, SignedOut} from "@clerk/nextjs";
 import {useRouter} from "next/navigation";
 import {dark} from "@clerk/themes";
 
@@ -37,6 +37,18 @@ const Topbar = (props) => {
                             </div>
                         </SignOutButton>
                     </SignedIn>
+                    <SignedOut>
+                        <SignInButton signInCallback={() => router.push("/sign-in")}>
+                            <div className={"flex cursor-pointer"}>
+                                <Image
+                                    src={"/assets/sign-in.svg"}
+                                    alt={"sign in"}
+                                    width={24}
+                                    height={24}
+                                />
+                            </div>
+                        </SignInButton>
+                    </SignedOut>
                 </div>
                 <OrganizationSwitcher
                     appearance={{

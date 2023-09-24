@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86da12a1-385b-4f1a-9281-4ba5adc1530f" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/app/(root)/communities/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/cards/communitycard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/DeleteIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/SearchBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/delete-gray.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(auth)/onboarding/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/onboarding/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/activity/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/activity/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/communities/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/communities/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/create-thread/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/create-thread/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/profile/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/profile/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/search/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/search/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/cards/ThreadCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/cards/ThreadCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/forms/PostThread.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/forms/PostThread.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/ThreadsTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/ThreadsTab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/profile_header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/profile_header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/actions/thread.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/thread.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/actions/user.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/community.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/community.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/LeftsideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/LeftsideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/Topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/Topbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +73,8 @@
       <workItem from="1695458773747" duration="11528000" />
       <workItem from="1695486481046" duration="2473000" />
       <workItem from="1695491892681" duration="8311000" />
-      <workItem from="1695547891945" duration="3545000" />
+      <workItem from="1695547891945" duration="4690000" />
+      <workItem from="1695580852168" duration="608000" />
     </task>
     <servers />
   </component>
