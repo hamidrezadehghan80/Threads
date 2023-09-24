@@ -1,5 +1,9 @@
+
 import Link from "next/link";
 import Image from "next/image";
+import {formatDateString} from "@/lib/utils";
+
+import DeleteIcon from "@/components/shared/DeleteIcon";
 
 interface Params {
     id:string;
@@ -36,6 +40,10 @@ const ThreadCard = ({
     comments,
     isComment
 } : Params) => {
+
+    // const pathname = usePathname();
+    // const router = useRouter();
+
     return(
         <article className={`flex flex-col w-full rounded-xl ${isComment ? "px-0 xs:px-7" : "bg-dark-2 p-7"}`}>
             <div className={"flex items-start justify-between"}>
@@ -100,11 +108,20 @@ const ThreadCard = ({
                                     height={24}
                                     className={"cursor-pointer object-contain"}
                                 />
+                                <DeleteIcon
+                                    userId={currentuserId}
+                                    authorId={author.id}
+                                    id={JSON.stringify(id)}
+                                    parentId={parentId}
+                                    isComment={isComment}
+                                />
                             </div>
                             { isComment && comments.length > 0 &&
                                 (
                                     <Link href={`/thread/${id}`}>
-                                        <p className={"mt-1 text-subtle-medium text-gray-1"}>{comments.length} replies</p>
+                                        <p className={"mt-1 text-subtle-medium text-gray-1"}>
+                                            {comments.length == 1 ? `${comments.length} reply` : `${comments.length} replies`}
+                                        </p>
                                     </Link>
                                 )
                             }
@@ -112,6 +129,45 @@ const ThreadCard = ({
                     </div>
                 </div>
             </div>
+
+            {!isComment && comments.length>0 &&(
+                <div className={"ml-1 mt-3 flex items-center gap-2"}>
+                    {comments.slice(0, 2).map((comment, index) => (
+                        <Image
+                            key={index}
+                            src={comment.author.image}
+                            alt={`user_${index}`}
+                            width={24}
+                            height={24}
+                            className={`${index !== 0 && "-ml-5"} rounded-full object-cover`}
+                        />
+                    ))}
+                    <Link href={`/thread/${id}`}>
+                        <p className={"mt-1 text-subtle-medium text-gray-1"}>
+                            {comments.length == 1 ? `${comments.length} reply` : `${comments.length} replies`}
+                        </p>
+                    </Link>
+                </div>
+            )}
+
+            {!isComment && community && (
+                <Link
+                    href={`/communities/${community.id}`}
+                    className={"mt-5 flex items-center"}
+                >
+                    <p className={"text-subtle-medium text-gray-1"}>
+                        {formatDateString(createdAt) + ` `}
+                        - {community.name} Community
+                    </p>
+                    <Image
+                        src={community.image}
+                        alt={"community profile"}
+                        width={15}
+                        height={15}
+                        className={"ml-1 rounded-full object-cover"}
+                    />
+                </Link>
+            )}
         </article>
     )
 }

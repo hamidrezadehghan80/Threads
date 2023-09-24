@@ -1,10 +1,11 @@
 "use server"
 
 import {connectToDB} from "@/lib/mongoose";
-import User from "../models/user.model"
+import User from "@/lib/models/user.model"
 import {revalidatePath} from "next/cache";
 import Thread from "@/lib/models/thread.model";
 import { FilterQuery, SortOrder } from "mongoose";
+import Community from "@/lib/models/community.model";
 
 interface Params {
     userId : string
@@ -53,13 +54,12 @@ export async function fetchUser(userId : string) {
     try {
         await connectToDB();
 
-        return await User.findOne({id : userId})
-                        // .populate({
-                        //     path: "Communities",
-                        //     model: Community
-                        // })
-    }catch (e : any) {
-        throw new Error(`Failed to fetch user: ${e.message}`)
+        return await User.findOne({ id: userId }).populate({
+            path: "communities",
+            model: Community,
+        });
+    } catch (error: any) {
+        throw new Error(`Failed to fetch user: ${error.message}`);
     }
 }
 
@@ -67,20 +67,26 @@ export async function fetchUserThreads(userId : string) {
     try {
         await connectToDB();
 
-        const threads = await User.findById({_id:userId})
-            .populate({
-                path: "threads",
-                model : Thread,
-                populate: {
+        const threads = await User.findOne({ id: userId }).populate({
+            path: "threads",
+            model: Thread,
+            populate: [
+                {
+                    path: "community",
+                    model: Community,
+                    select: "name id image _id", // Select the "name" and "_id" fields from the "Community" model
+                },
+                {
                     path: "children",
-                    model : Thread,
+                    model: Thread,
                     populate: {
                         path: "author",
                         model: User,
-                        select: "name image id"
-                    }
-                }
-            })
+                        select: "name image id", // Select the "name" and "_id" fields from the "User" model
+                    },
+                },
+            ],
+        });
 
         return threads;
 

@@ -8,6 +8,7 @@ interface Params {
     username : string;
     image : string;
     bio : string;
+    type?:"User" | "Community"
 }
 
 const Profile_header = ({
@@ -17,6 +18,7 @@ const Profile_header = ({
     username,
     image,
     bio,
+    type,
 } : Params) => {
     return(
         <div className={"flex w-full flex-col justify-start"}>

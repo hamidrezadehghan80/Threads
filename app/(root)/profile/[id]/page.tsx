@@ -18,7 +18,7 @@ const Page = async ({params} : {params : {id:string} }) => {
 
     const userInfo = await fetchUser(params.id);
 
-    // if (!userInfo.onboarded) redirect("/onboarding")
+    // if (!userInfo.onboarded) redirect("/onboarding");
 
 
     return(
@@ -62,7 +62,7 @@ const Page = async ({params} : {params : {id:string} }) => {
                             <TabsContent key={`content ${tab.label}`} value={tab.value} className={"w-full text-light-1"}>
                                 <ThreadsTab
                                     currentUserId={user.id}
-                                    userId={userInfo._id}
+                                    userId={userInfo.id}
                                     accountType={"User"}
                                 />
                             </TabsContent>
