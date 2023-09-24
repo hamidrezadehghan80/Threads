@@ -36,13 +36,11 @@ Threads allows users to share posts called "threads" containing text, images, li
 Getting Started
 Installation
 
-bash
-
-Copy code
+```bash
 git clone https://github.com/<your-username>/threads.git
 cd threads
 npm install
-
+```
 Configuration
 
 Create .env files with your:
@@ -53,11 +51,9 @@ Create .env files with your:
 
 Running Locally
 
-bash
-
-Copy code
+```bash
 npm run dev
-
+```
 The app will be available at http://localhost:3000.
 ## Contributing
 
